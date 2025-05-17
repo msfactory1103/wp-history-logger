@@ -36,7 +36,7 @@ if (!postId) {
 
     // --- WordPressへ反映 ---
     const wpUser = "test";
-    const wpAppPassword = "zEIQ PzEK 1E3l zDnz zJhJ tREZ";
+    const wpAppPassword = "process.env.WP_APP_PASSWORD";
     const base64Auth = Buffer.from(`${wpUser}:${wpAppPassword}`).toString("base64");
 
     const res = await fetch(`http://localhost:8081/index.php?rest_route=/wp/v2/pages/${postId}`, {
