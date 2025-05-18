@@ -11,6 +11,8 @@ A developer workflow for editing static HTML files in VSCode and instantly synci
   （VSCodeで編集したHTMLを自動検知）
 - 🔃 Extracts `POST_ID` from HTML comments and updates WordPress pages via REST API  
   （HTML内の `POST_ID` コメントから対象ページを特定して自動更新）
+- 💾 Saves each version of the HTML to a MySQL database (`wp_content_histories`)  
+  （各バージョンのHTMLをMySQLに保存し、履歴として保持）  
 - 🌐 Automatically reloads both WordPress edit screens and public views  
   （固定ページの編集画面・表示画面どちらも自動リロード対応）
 - 🗂 Easy to launch via `.bat` or `npm run` scripts  
@@ -86,6 +88,8 @@ Or use the .bat file to launch both at once.
 （複数サイト対応：設定ファイル管理）
 - 🖥️ GUI Launcher (e.g. Electron version)
 （GUI版ランチャーの構想もあり）
+- 📜 History viewer / rollback tool
+（履歴閲覧・ロールバック機能の追加）
 
 ## 🤝 Contribution / コントリビューション
 PRs, issues, and discussions are very welcome!
